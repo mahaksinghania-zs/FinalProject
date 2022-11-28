@@ -1,7 +1,7 @@
-package Entities
+package entities
 
 type Company struct {
-	ID       int
+	ID       string
 	Name     string
 	Category string
 }

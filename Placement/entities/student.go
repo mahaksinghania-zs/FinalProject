@@ -1,9 +1,9 @@
-package Entities
+package entities
 
 type Student struct {
-	ID      int
-	DOB     int
-	PhoneNo int
+	ID      string
+	DOB     string
+	PhoneNo string
 	Branch  string
 	Name    string
 	company Company

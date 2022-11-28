@@ -1,16 +1,18 @@
 package store
 
+import "Project3/Placement/entities"
+
 type Company interface {
-	GetById()
-	Create()
-	Update()
-	Delete()
+	GetById(Id string) entities.Company
+	Create(company entities.Company) string
+	Update(company entities.Company) string
+	Delete(Id string) string
 }
 
 type Student interface {
-	Get()
-	GetById()
-	Create()
-	Update()
-	Delete()
+	Get(Id string) entities.Student
+	GetById(Id string) entities.Student
+	Create(student entities.Student)
+	Update(student entities.Student)
+	Delete(student entities.Student)
 }
